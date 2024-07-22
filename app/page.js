@@ -48,7 +48,7 @@ export default function Home() {
               <CarouselContent>
                 {Array(6).fill("").map((_, index) => (
                   <CarouselItem key={index} className="md:basis-1/2 lg:basis-1/3">
-                    <Image alt="logo" src="/logobar.png" className="mx-auto" width={150} height={150} />
+                    <Image alt="logo" src="./logobar.png" className="mx-auto" width={150} height={150} />
                   </CarouselItem>
                 ))}
               </CarouselContent>

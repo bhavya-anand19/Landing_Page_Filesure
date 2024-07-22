@@ -29,13 +29,13 @@ const Navbar = () => {
         <nav className={`md:container md:top-5 md:left-0 md:right-0 md:p-2 md:w-11/12 md:mx-auto md:rounded-lg bg-white border-gray-200 dark:bg-gray-900 shadow-md fixed top-0 w-full z-50 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-[130%]'}`}>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <Image priority width={110} height={70} src="/logo1.png" alt="Flowbite Logo" />
+                    <Image priority width={110} height={70} src="./logo1.png" alt="Logo" />
                 </Link>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <div className='flex items-center gap-1 text-sm'>
-                        <Image className='hidden lg:block' alt="Phone png" width={14} height={14} src="/phone.png" />
+                        <Image className='hidden lg:block' alt="Phone png" width={14} height={14} src="./phone.png" />
                         <Link href="#" className='text-lime-600 hover:underline hover:text-lime-800 text-sm hidden lg:block'>+91 0000000000</Link>
-                        <Image className='lg:ml-5 hidden md:block' alt="Mail png" width={14} height={14} src="/mail.png" />
+                        <Image className='lg:ml-5 hidden md:block' alt="Mail png" width={14} height={14} src="./mail.png" />
                         <Link href="#" className='text-lime-600 hover:underline hover:text-lime-800 text-sm hidden md:block'>example@gmail.com</Link>
                     </div>
                     <button onClick={() => { setShowNavbar(!showNavbar) }} onBlur={() => { setTimeout(() => { setShowNavbar(false) }, 200); }} type="button" className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-cta" aria-expanded="false">
