@@ -29,7 +29,7 @@ const Navbar = () => {
         <nav className={`md:container md:top-5 md:left-0 md:right-0 md:p-2 md:w-11/12 md:mx-auto md:rounded-lg bg-white border-gray-200 dark:bg-gray-900 shadow-md fixed top-0 w-full z-50 transition-transform duration-300 ${visible ? 'translate-y-0' : '-translate-y-[130%]'}`}>
             <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                 <Link href="/" className="flex items-center space-x-3 rtl:space-x-reverse">
-                    <Image priority width={110} height={70} src="./logo1.png" alt="Logo" />
+                    <Image priority width={110} height={70} src="./dummylogo.png" alt="Logo" />
                 </Link>
                 <div className="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
                     <div className='flex items-center gap-1 text-sm'>
