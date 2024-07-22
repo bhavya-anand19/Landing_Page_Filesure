@@ -17,6 +17,7 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import { Separator } from "@/components/ui/separator";
+import Card from "@/components/card";
 
 export default function Home() {
   return (
@@ -86,7 +87,9 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-32">
+        {/* List of Projects types */}
+
+        <section className="mt-32 mb-12">
 
           <h2 className="text-3xl sm:mx-auto md:ml-32 md:w-1/3 sm:w-3/4 font-bold">Developed More than <span className="text-lime-600"> 100 </span> projects in <span className="text-lime-600">15</span> industries</h2>
           <div className="w-full">
@@ -123,7 +126,28 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Separator className="block mt-20" />
+
+
+
+        {/* Application Development Stage */}
+
+        <section className="bg-white mt-0 p-2">
+          <div className="mt-24 mb-28">
+            <h2 className="text-3xl lg:ml-28 lg:w-1/3 w-full font-bold md:text-center"> Application Development Stage </h2>
+            <div class="grid content-center lg:grid-rows-3 p-1 lg:grid-cols-3 lg:gap-14 lg:mx-28 sm:mt-16 md:grid-cols-2 md:grid-rows-2 sm:grid-cols-1 sm:grid-rows-6 gap-10">
+              <Card src={'/analysis.png'} topic="Analysis" text="We craft precise technical specs, aligning with your business, technology, and user requirements." />
+              <div class="row-span-3 hidden lg:block"> <Image src="/mobile.png" priority width={800} height={1000} className="w-full" /> </div>
+              <Card src={'/testing.png'} topic="Testing" text="We carry out functional testing and do bug fixes. We adapt the application to different phone resolutions." />
+              <Card src={'/design.png'} topic="Design" text="We adapt the customer's corporate identity to the platform guidelines. We draw convenient and understandable interfaces." />
+              <Card src={'/launch.png'} topic="Launching" text="We design the application page and publish it in the App Store and Google Play Store." />
+              <Card src={'/development.png'} topic="Development" text="We create an extensible architecture, write clean and stable code. We integrate with customer technologies." />
+              <Card src={'/support.png'} topic="Support" text="We monitor the safety of the application, update it for new devices and versions of iOS and Android." />
+
+            </div>
+          </div>
+        </section>
+
+
         {/* FAQ section */}
         <section id="faq" className="bg-background md:px-14 py-10 container">
           <div>
@@ -145,6 +169,8 @@ export default function Home() {
             </Accordion>
           </div>
         </section>
+
+
       </main>
       <Footer />
     </>
