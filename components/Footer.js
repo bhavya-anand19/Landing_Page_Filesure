@@ -10,11 +10,11 @@ const Footer = () => {
                 </div>
                 <div id="contacts" className='flex flex-wrap gap-9 justify-between'>
                     <div>
-                        <div className='text-sm text-slate-300 mb-1 flex items-center gap-1'><Image alt='Phone png' src="/footer/phone.png" width={12} height={12} /><span>Contact nums</span></div>
+                        <div className='text-sm text-slate-300 mb-1 flex items-center gap-1'><Image alt='Phon' src="/footer/phone.png" width={12} height={12} /><span>Contact nums</span></div>
                         <div>+91 0000000000</div>
                     </div>
                     <div className='overflow-hidden'>
-                        <div className='text-sm text-slate-300 mb-1 flex items-center gap-1'><Image alt='Mail png' src="/footer/mail.png" width={12} height={12} /><span>Gmail</span></div>
+                        <div className='text-sm text-slate-300 mb-1 flex items-center gap-1'><Image alt='Mail' src="/footer/mail.png" width={12} height={12} /><span>Gmail</span></div>
                         <div className='break-words'>example@gmail.com</div>
                     </div>
                     <div>
